@@ -9,8 +9,6 @@ specifiers:
   eslint-plugin-react-hooks: ^5.1.0-rc.0
   eslint-plugin-react-refresh: ^0.4.9
   globals: ^15.9.0
-  graphql: ^16.9.0
-  graphql-tag: ^2.12.6
   prettier: ^3.3.3
   react: ^18.3.1
   react-dom: ^18.3.1
@@ -19,8 +17,6 @@ specifiers:
   vite: ^5.4.1
 
 dependencies:
-  graphql: 16.9.0
-  graphql-tag: 2.12.6_graphql@16.9.0
   react: 18.3.1
   react-dom: 18.3.1_react@18.3.1
 
@@ -1120,21 +1116,6 @@ packages:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
     dev: true
 
-  /graphql-tag/2.12.6_graphql@16.9.0:
-    resolution: {integrity: sha512-FdSNcu2QQcWnM2VNvSCCDCVS5PpPqpzgFT8+GXzqJuoDd0CBncxCY278u4mhRO7tMgo2JjgJA5aZ+nWSQ/Z+xg==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      graphql: ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
-    dependencies:
-      graphql: 16.9.0
-      tslib: 2.7.0
-    dev: false
-
-  /graphql/16.9.0:
-    resolution: {integrity: sha512-GGTKBX4SD7Wdb8mqeDLni2oaRGYQWjWHGKPQ24ZMnUtKfcsVoiv4uX8+LJr1K6U5VW2Lu1BwJnj7uiori0YtRw==}
-    engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
-    dev: false
-
   /has-flag/4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
@@ -1486,10 +1467,6 @@ packages:
     dependencies:
       typescript: 5.6.2
     dev: true
-
-  /tslib/2.7.0:
-    resolution: {integrity: sha512-gLXCKdN1/j47AiHiOkJN69hJmcbGTHI0ImLmbYLHykhgeN0jVGola9yVjFgzCUklsZQMW55o+dW7IXv3RCXDzA==}
-    dev: false
 
   /type-check/0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
