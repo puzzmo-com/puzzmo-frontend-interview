@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Welcome to Puzzmo monthly top scorers: a React app that fetches the first page of results from Puzzmo's Monthly total score leaderboard and displays the results in a list. It uses the Puzzmo GraphQL API to fetch the data.
+Welcome to Puzzmo monthly top scorers: a React app that fetches the first page of results for Puzzmo's Monthly total score leaderboard from Puzzmo's GraphQL API and displays the results in a list.
 
 Relevant TypeScript types that mirror Puzzmo's GraphQL schema are in [`puzzmo-types.d.ts`](/src/puzzmo-types.d.ts).
 
