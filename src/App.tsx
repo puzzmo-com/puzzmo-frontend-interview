@@ -12,6 +12,7 @@ type LeaderboardData = {
     records: {
       edges: Array<{
         node: {
+          score: number;
           user: UserForLeaderboard;
         };
       }>;
@@ -52,6 +53,7 @@ function useGetLeaderboardDataOnLoad(): [
                 records(contextualSubset: false, first: 0) {
                   edges {
                     node {
+                      score
                       user {
                         id
                         username
@@ -87,7 +89,7 @@ function App() {
   const [leaderboardData, loading] = useGetLeaderboardDataOnLoad();
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div>Loading…</div>;
   }
 
   if (!leaderboardData) {
@@ -99,7 +101,10 @@ function App() {
       <h2>{leaderboardData.leaderboard.name}</h2>
       <ol>
         {leaderboardData.leaderboard.records.edges.map((edge) => (
-          <li key={edge.node.user.id}>{edge.node.user.name}</li>
+          <li key={edge.node.user.id}>
+            {edge.node.user.name}:{' '}
+            {Intl.NumberFormat(undefined, {}).format(edge.node.score)}
+          </li>
         ))}
       </ol>
     </div>
