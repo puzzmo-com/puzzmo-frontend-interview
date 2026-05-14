@@ -71,9 +71,9 @@ function useGetLeaderboardDataOnLoad(): [
           },
         );
         setLeaderboardData(response.data);
+        setLoading(false);
       } catch (error) {
         console.error('Error fetching leaderboard data:', error);
-      } finally {
         setLoading(false);
       }
     };
